@@ -1,0 +1,16 @@
+ci:
+  - .*  # all '.<>' files
+  - ".github/**"
+  - Dockerfile*
+
+doc:
+  - "*.rst"
+  # ignore changelog as doc would almost always be tagged
+  - "!CHANGES.rst"
+  - "*.example"
+  - README.md
+  - LICENCE*
+  - docs/**/*
+
+tests:
+  - tests/**/*
